@@ -26,3 +26,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * [The Tail at Scale](https://cacm.acm.org/magazines/2013/2/160173-the-tail-at-scale/fulltext) by Jeffrey Dean and Luiz André Barroso (2013)
 * [Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency](https://drkp.net/papers/latency-socc14.pdf) by Jialin Li et al (2014)
 * [Amdahl’s Law for Tail Latency](https://www.csl.cornell.edu/~delimitrou/papers/2018.cacm.amdahlsTail.pdf) by Christina Delimitrou and Christos Kozyrakis (2018)
+
+## Conferences
+
+* [P99 CONF](https://www.p99conf.io)
