@@ -8,6 +8,8 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * Colocate compute and data.
 * Avoid dynamic memory management.
 * Avoid context switching.
+* Avoid paging.
+* Avoid CPU intensive computation.
 * Use wait-free data synchronization.
 * Partition data to avoid sharing (and therefore synchronization).
 * Make shared data structures read-only (when possible).
