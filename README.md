@@ -14,6 +14,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * Use kernel-bypass networking such as DPDK or XDP.
 * Use hardware offload with accelerators and FPGA.
 * Avoid coordinated omission when measuring latency.
+* Configure your system (for example, use preemptible kernel, watch out for bad device drivers).
 
 ## Blogs
 
