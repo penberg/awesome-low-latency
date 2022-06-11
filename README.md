@@ -6,6 +6,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 ## Patterns
 
 * Colocate compute and data.
+* Control memory access patterns.
 * Avoid dynamic memory management.
 * Avoid context switching.
 * Avoid paging.
