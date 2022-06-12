@@ -14,7 +14,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * Partition data to avoid sharing (and therefore synchronization).
 * Make shared data structures read-only (when possible).
 * Maximise cache hit rate.
-* Inline functions
+* Avoid as much work as possible (for example, avoid function call overhead by using inlining)
 * Use busy-polling instead of wakeups.
 * Use non-blocking I/O.
 * Use kernel-bypass networking such as DPDK or XDP.
