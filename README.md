@@ -18,6 +18,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * Avoid as much work as possible (for example, avoid function call overhead by using inlining)
 * Use busy-polling instead of wakeups.
 * Use non-blocking I/O.
+* Disable Nagle's algorithm.
 * Use kernel-bypass networking such as DPDK or XDP.
 * Use hardware offload with accelerators and FPGA.
 * Avoid coordinated omission when measuring latency.
