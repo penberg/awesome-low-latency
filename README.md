@@ -5,25 +5,45 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 ## Patterns
 
-* Colocate compute and data.
-* Control memory access patterns.
-* Avoid dynamic memory management.
-* Avoid context switching.
-* Avoid paging.
-* Avoid CPU intensive computation.
-* Use wait-free data synchronization.
+### Principles
+
+* Colocating compute and data.
 * Partition data to avoid sharing (and therefore synchronization).
 * Make shared data structures read-only (when possible).
 * Maximise cache hit rate.
-* Avoid as much work as possible (for example, avoid function call overhead by using inlining)
+
+### Memory
+
+* Avoid dynamic memory management.
+* Control memory access patterns.
+* Avoid demand paging.
+* Avoid as much work as possible (for example, avoid function call overhead by using inlining).
+
+### Threads
+
+* Avoid CPU intensive computation.
+* Avoid context switching.
+* Use wait-free data synchronization.
 * Use busy-polling instead of wakeups.
-* Use non-blocking I/O.
+
+### I/O
+
 * Disable Nagle's algorithm.
+* Use non-blocking I/O.
+
+### Kernel-bypass
+
 * Use kernel-bypass networking such as DPDK or XDP.
 * Use hardware offload with accelerators and FPGA.
-* Avoid coordinated omission when measuring latency.
+
+### System
+
 * Know your underlying system (hardware, operating system, runtime, and so on)
 * Configure your underlying system (for example, use preemptible kernel, watch out for bad device drivers).
+
+### Latency measurements
+
+* Avoid coordinated omission when measuring latency.
 
 ## Blogs
 
