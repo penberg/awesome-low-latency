@@ -11,6 +11,9 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * Partition data to avoid sharing (and therefore synchronization).
 * Make shared data structures read-only (when possible).
 * Maximise cache hit rate.
+* Hedge requests (send same request to multiple replicas, use response from fastest).
+* Parallelize requests to different services.
+* Reduce head-of-line blocking.
 
 ### Memory
 
