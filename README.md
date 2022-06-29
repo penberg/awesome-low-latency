@@ -5,48 +5,51 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 ## Patterns
 
-### Principles
+### How to Latency Correctly
 
-* Colocating compute and data.
-* Partition data to avoid sharing (and therefore synchronization).
-* Make shared data structures read-only (when possible).
-* Maximise cache hit rate.
-* Hedge requests (send same request to multiple replicas, use response from fastest).
-* Parallelize requests to different services.
-* Reduce head-of-line blocking.
+* Latency is a distribution
+* Avoid coordinated omission
 
-### Memory
+### Avoid Data Movement
 
-* Avoid dynamic memory management.
-* Control memory access patterns.
-* Avoid demand paging.
-* Avoid as much work as possible (for example, avoid function call overhead by using inlining).
+* Co-locate compute and data
+* Replicate data for faster access
+* Maximize cache hit rate
+* Control memory access patterns
 
-### Threads
+### Avoid Work
 
+* Avoid dynamic memory management
+* Avoid demand paging
+* Avoid as much work as possible (for example, avoid function call overhead by using inlining)
 * Avoid CPU intensive computation.
-* Avoid context switching.
-* Use wait-free data synchronization.
-* Use busy-polling instead of wakeups.
 
-### I/O
+### Avoid Waiting
 
-* Disable Nagle's algorithm.
-* Use non-blocking I/O.
+* Partition data to avoid sharing (and, therefore, synchronization)
+* Make shared data structures read-only (when possible)
+* Reduce head-of-line blocking
+* Avoid context switching
+* Use wait-free data synchronization
+* Use busy-polling instead of wakeups
+* Disable Nagle's algorithm
+* Use non-blocking I/O
 
-### Kernel-bypass
+### Hide Latency
 
-* Use kernel-bypass networking such as DPDK or XDP.
-* Use hardware offload with accelerators and FPGA.
+* Parallelize requests to different services
+* Request hedging (send redundant requests to multiple replicase, use response from fastest one)
 
-### System
+### Tune for Low Latency
 
-* Know your underlying system (hardware, operating system, runtime, and so on)
-* Configure your underlying system (for example, use preemptible kernel, watch out for bad device drivers).
+* Use preemptible kernel
+* Interrupt affinity
+* Watch out for bad device drivers
 
-### Latency measurements
+### Advanced Topics
 
-* Avoid coordinated omission when measuring latency.
+* Use kernel-bypass networking such as DPDK or XDP
+* Use hardware offload with accelerators and FPGA
 
 ## Blogs
 
