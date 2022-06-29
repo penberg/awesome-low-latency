@@ -5,7 +5,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 ## Patterns
 
-### How to Latency Correctly
+### How to Measure Latency Correctly
 
 * Latency is a distribution
 * Avoid coordinated omission
