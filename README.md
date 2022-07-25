@@ -12,7 +12,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 ### Avoid Data Movement
 
-* Co-locate compute and data
+* Co-locate compute and data e.g. Processing-In-Memory or Processing-Near-Memory
 * Replicate data for faster access
 * Maximize cache hit rate
 * Control memory access patterns
@@ -20,7 +20,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 ### Avoid Work
 
 * Avoid dynamic memory management
-* Avoid demand paging
+* Avoid demand paging to prevent memory thrashing e.g. by using larger memory pages (hugepages on Linux, superpages on FreeBSD, ...)
 * Avoid as much work as possible (for example, avoid function call overhead by using inlining)
 * Avoid CPU intensive computation.
 
@@ -39,11 +39,13 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 * Parallelize requests to different services
 * Request hedging (send redundant requests to multiple replicase, use response from fastest one)
+* Use SIMD instructions when possible
+* Multiprocessing and multithreading
 
 ### Tune for Low Latency
 
 * Use preemptible kernel
-* Interrupt affinity
+* Interrupt and process affinity
 * Watch out for bad device drivers
 
 ### Advanced Topics
