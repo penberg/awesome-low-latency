@@ -39,7 +39,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 * Parallelize requests to different services
 * Request hedging (send redundant requests to multiple replicase, use response from fastest one)
-* Use SIMD instructions when possible
+* Use optimized SIMD instructions for suitable problems
 * Multiprocessing and multithreading
 
 ### Tune for Low Latency
