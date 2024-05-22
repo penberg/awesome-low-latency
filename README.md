@@ -64,6 +64,12 @@ This document attempts to codify that knowledge for people to (re)discover the a
 * [Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency](https://drkp.net/papers/latency-socc14.pdf) by Jialin Li et al (2014)
 * [Amdahl’s Law for Tail Latency](https://www.csl.cornell.edu/~delimitrou/papers/2018.cacm.amdahlsTail.pdf) by Christina Delimitrou and Christos Kozyrakis (2018)
 
+## Books
+
+* [The Art of Computer Systems Performance Analysis: Techniques for Experimental Design, Measurement, Simulation, and Modeling](https://www.cse.wustl.edu/~jain/books/perfbook.htm) by Raj Jain (1991)
+* [Systems Performance: Enterprise and the Cloud, 2nd Edition](https://www.brendangregg.com/systems-performance-2nd-edition-book.html) by Brendan Gregg (2020)
+* [Latency: Reduce delay in software systems](https://www.manning.com/books/latency) by Pekka Enberg (2023)
+
 ## Conferences
 
 * [P99 CONF](https://www.p99conf.io)
