@@ -19,6 +19,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 ### Avoid Work
 
+* Tame algorithmic complexity
 * Avoid dynamic memory management
 * Avoid demand paging to prevent memory thrashing e.g. by using larger memory pages (hugepages on Linux, superpages on FreeBSD, ...)
 * Avoid as much work as possible (for example, avoid function call overhead by using inlining)
