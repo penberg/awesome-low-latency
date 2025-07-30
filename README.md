@@ -9,6 +9,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 * Latency is a distribution
 * Avoid coordinated omission
+* Visualize latency using eCDFs or histograms
 
 ### Avoid Data Movement
 
