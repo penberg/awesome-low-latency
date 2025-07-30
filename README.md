@@ -69,7 +69,7 @@ This document attempts to codify that knowledge for people to (re)discover the a
 
 * [The Art of Computer Systems Performance Analysis: Techniques for Experimental Design, Measurement, Simulation, and Modeling](https://www.cse.wustl.edu/~jain/books/perfbook.htm) by Raj Jain (1991)
 * [Systems Performance: Enterprise and the Cloud, 2nd Edition](https://www.brendangregg.com/systems-performance-2nd-edition-book.html) by Brendan Gregg (2020)
-* [Latency: Reduce delay in software systems](https://www.manning.com/books/latency) by Pekka Enberg (2023)
+* [Latency: Reduce delay in software systems](https://www.manning.com/books/latency) by Pekka Enberg (2025)
 
 ## Conferences
 
